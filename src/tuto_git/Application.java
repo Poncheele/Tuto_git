@@ -17,7 +17,6 @@ public class Application extends Frame implements WindowListener{
 		super();
 		
 		Modele modl = new Modele();
-		Controleur ctrl = new Controleur(modl); 
 		Vue vue = new Vue();
 		modl.addObserver(vue);
 		vue.addActionListener(ctrl);
@@ -38,8 +37,7 @@ public class Application extends Frame implements WindowListener{
 	@Override
 	public void windowClosing(WindowEvent e){ System.exit(0); }
 
-	@Override
-	public void windowDesactivated(WindowEvent e){ }
+
 
 	@Override
 	public void windowDeiconified(WindowEvent e){ }
@@ -49,4 +47,10 @@ public class Application extends Frame implements WindowListener{
 
 	@Override
 	public void windowOpened(WindowEvent e){ }
+
+	@Override
+	public void windowDeactivated(WindowEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
 }
