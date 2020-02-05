@@ -21,6 +21,7 @@ public class Application extends Frame implements WindowListener {
 		vue.addActionListener(ctrl);
 		this.setTitle("titre de fenetre nul");
 		this.setLocationRelativeTo(null);
+		this.setTitle("different");
 		this.add(vue);
 		this.pack();
 		this.setVisible(true);
