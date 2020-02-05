@@ -20,6 +20,7 @@ public class Application extends Frame implements WindowListener {
 		modl.addObserver(vue);
 		vue.addActionListener(ctrl);
 		this.setLocationRelativeTo(null);
+		this.setTitle("different");
 		this.add(vue);
 		this.pack();
 		this.setVisible(true);
